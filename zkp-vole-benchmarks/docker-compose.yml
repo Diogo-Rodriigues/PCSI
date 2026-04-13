@@ -1,0 +1,41 @@
+x-emp-base: &emp-base
+  # Diz ao Docker onde está o ficheiro para construir a imagem
+  build:
+    context: .
+    dockerfile: docker/Dockerfile.emp-zk
+  image: emp-zk-benchmarks:latest
+  # Necessário para que a Alice e o Bob comuniquem instantaneamente
+  network_mode: "host"
+  # Mapeia a pasta "/results" do teu PC para dentro do Docker
+  volumes:
+    - ./results:/zk-benchmarks/bin/data
+
+services:
+  # 1. BENCHMARK: MULTIPLICAÇÃO DE MATRIZES
+  alice-matrix:
+    <<: *emp-base
+    container_name: alice-matrix
+    # Comando: <executável> <1=Alice> <porta> <tamanho_da_matriz>
+    command: ./bench_matrix 1 12345 32
+
+  bob-matrix:
+    <<: *emp-base
+    container_name: bob-matrix
+    depends_on:
+      - alice-matrix
+    # Comando: <executável> <2=Bob> <porta> <tamanho_da_matriz>
+    command: ./bench_matrix 2 12345 32
+
+  # 2. BENCHMARK: FUNÇÃO HASH SHA-256
+  alice-sha256:
+    <<: *emp-base
+    container_name: alice-sha256
+    # O SHA-256 já tem o tamanho fixo no código, não precisa de parâmetros extra
+    command: ./bench_sha256 1 12345
+
+  bob-sha256:
+    <<: *emp-base
+    container_name: bob-sha256
+    depends_on:
+      - alice-sha256
+    command: ./bench_sha256 2 12345
