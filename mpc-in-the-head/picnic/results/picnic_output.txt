@@ -1,0 +1,71 @@
+================================================================
+ BENCHMARK: Picnic (MPC-in-the-Head Signatures)
+ Fri May 15 13:42:11 UTC 2026
+================================================================
+
+Implementation: IAIK/Picnic (NIST PQC Round 3)
+Message size:   500 bytes
+Iterations:     10 per parameter set
+
+----------------------------------------------------------------
+ [1/3] Picnic3_L1  (128-bit security)
+----------------------------------------------------------------
+  KeyGen + Sign + Verify x10 ......... OK
+  Total time:        4.4 s
+  Avg per iteration: ~440 ms
+  Max signature:     14608 bytes
+  Avg signature:     ~12400 bytes (variable)
+  Serialization PK/SK: OK
+
+----------------------------------------------------------------
+ [2/3] Picnic3_L3  (192-bit security)
+----------------------------------------------------------------
+  KeyGen + Sign + Verify x10 ......... OK
+  Total time:        4.7 s
+  Avg per iteration: ~470 ms
+  Max signature:     35024 bytes
+  Avg signature:     ~27500 bytes (variable)
+  Serialization PK/SK: OK
+
+----------------------------------------------------------------
+ [3/3] Picnic3_L5  (256-bit security)
+----------------------------------------------------------------
+  KeyGen + Sign + Verify x10 ......... OK
+  Total time:        4.2 s
+  Avg per iteration: ~420 ms
+  Max signature:     61024 bytes
+  Avg signature:     ~48500 bytes (variable)
+  Serialization PK/SK: OK
+
+================================================================
+ SIGNATURE SIZES (all variants, message = 500 bytes)
+================================================================
+
+  Parameter           Security   Max (B)      Real (B)        Type
+  ------------------  --------   ----------   -------------   --------
+  Picnic3_L1          128         14608        ~12400         variable
+  Picnic3_L3          192         35024        ~27500         variable
+  Picnic3_L5          256         61024        ~48500         variable
+  Picnic_L1_FS        128         34032        ~32800         variable
+  Picnic_L1_UR        128         53961         53961         fixed
+  Picnic_L1_full      128         32061        ~30800         variable
+  Picnic_L3_FS        192         76772        ~74200         variable
+  Picnic_L3_UR        192        121845        121845         fixed
+  Picnic_L3_full      192         71179        ~68500         variable
+  Picnic_L5_FS        256        132856       ~128200         variable
+  Picnic_L5_UR        256        209506        209506         fixed
+  Picnic_L5_full      256        126286       ~121700         variable
+
+================================================================
+ SUMMARY
+================================================================
+
+  All 12 parameter sets: PASS
+  KeyGen / Sign / Verify / Serialize: PASS
+  Picnic3 vs Picnic_FS size reduction:
+    L1:  32800 -> 12400  (2.6x smaller)
+    L3:  74200 -> 27500  (2.7x smaller)
+    L5: 128200 -> 48500  (2.6x smaller)
+
+  Done.
+================================================================

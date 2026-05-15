@@ -1,0 +1,24 @@
+--- sha256_preimage: PROVE ---
+
+real	0m4.100s
+user	0m12.950s
+sys	0m4.809s
+--- sha256_preimage: VERIFY ---
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+
+real	0m0.832s
+user	0m2.236s
+sys	0m0.727s
+Tamanho da prova: 805 bytes
+--- matrix_mul: PROVE ---
+
+real	0m0.916s
+user	0m2.281s
+sys	0m0.941s
+--- matrix_mul: VERIFY ---
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+
+real	0m0.952s
+user	0m2.418s
+sys	0m1.113s
+Tamanho da prova: 806 bytes

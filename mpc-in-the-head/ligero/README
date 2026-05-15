@@ -1,0 +1,37 @@
+# Ligero – Benchmarks IOP (Interactive Oracle Proof)
+
+Ligero é um sistema de prova baseado em **IOPs** (Interactive Oracle Proofs) e **códigos lineares corretores de erros**. Transforma qualquer circuito R1CS numa prova sem trusted setup, usando hashing (transparente).
+
+## Diferença face às outras famílias
+
+| | Ligero | Circom/gnark (Groth16) | emp-zk (VOLE) | Picnic |
+|---|---|---|---|---|
+| Família | IOP / MPC-in-the-Head | SNARK | VOLE | MPC-in-the-Head |
+| Trusted setup |  Não precisa |  Sim (Powers of Tau) |  Não |  Não |
+| Interação | Não (Fiat-Shamir) | Não | Sim (2 partes) | Não |
+| Tamanho prova | Grande (KBs–MBs) | Pequeno (~200 bytes) | N/A (interativo) | Grande (~14–48 KB) |
+| Velocidade prove | Rápido | Lento (trusted setup caro) | Muito rápido | Moderado |
+
+## Implementação usada
+
+**libiop** (SCIPR Lab) – inclui Ligero, Aurora e Fractal.
+- Repositório: https://github.com/scipr-lab/libiop
+
+## Correr com Docker (recomendado)
+
+```bash
+docker-compose up --build
+```
+
+## Correr localmente
+
+```bash
+# Compilar o libiop
+git clone --recursive https://github.com/scipr-lab/libiop.git
+cd libiop && mkdir build && cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DWITH_PROCPS=OFF ..
+make -j$(nproc) ligero_snark_test
+
+# Correr benchmark
+bash scripts/run_bench.sh
+```

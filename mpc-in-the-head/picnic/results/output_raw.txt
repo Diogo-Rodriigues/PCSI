@@ -1,0 +1,3023 @@
+﻿Attaching to picnic-bench
+ Container picnic-bench Starting 
+ Container picnic-bench Started 
+picnic-bench  | ================================================================
+picnic-bench  |  BENCHMARK: Picnic (MPC-in-the-Head)
+picnic-bench  |  Itera├º├Áes por par├ómetro: 10
+picnic-bench  | ================================================================
+picnic-bench  | 
+picnic-bench  | --- picnic3_L1 ---
+picnic-bench  | KeyGen + Sign + Verify (10 itera├º├Áes):
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32768 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74228 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128216 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12536 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27704 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 47936 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30803 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68563 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121102 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32800 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 73868 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 127576 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12875 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27584 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 47328 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30888 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68563 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 120878 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32896 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74156 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128056 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12251 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27080 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48032 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30820 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68683 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121486 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32912 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74492 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 127800 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12474 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27584 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 47456 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 31007 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68203 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121710 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32736 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74084 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 127896 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12412 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27536 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48544 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30616 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68683 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 122030 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32960 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 73940 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 127992 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12457 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27056 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 47904 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30854 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68323 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121614 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32928 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 73916 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128024 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12395 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27944 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48288 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30939 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68707 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121614 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32928 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74420 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128632 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12361 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27224 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48192 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30752 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 69019 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121390 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32944 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74324 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 127864 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12474 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27560 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 47968 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30854 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68395 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121678 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32848 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74252 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128248 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12618 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27488 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48800 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30667 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68635 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121902 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | 
+picnic-bench  | real	0m4.372s
+picnic-bench  | user	0m4.244s
+picnic-bench  | sys	0m0.123s
+picnic-bench  | Tamanho da assinatura:
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32816 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 73676 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128536 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12392 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27848 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48864 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30854 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68659 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121774 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | 
+picnic-bench  | --- picnic3_L3 ---
+picnic-bench  | KeyGen + Sign + Verify (10 itera├º├Áes):
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32896 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74348 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128216 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12392 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 26360 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 47072 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30820 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68467 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121870 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32800 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74444 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128248 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12587 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27920 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 49024 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30854 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68539 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121966 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32752 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 73844 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128248 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12474 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27968 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 49472 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30956 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68347 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 122318 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32624 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 73772 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128184 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12683 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27536 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48608 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30990 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68563 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121422 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32672 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74300 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128472 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12203 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27224 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48384 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30922 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68443 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121198 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32800 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74012 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128344 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12827 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 26864 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48832 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30820 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68779 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121870 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32768 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74084 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128088 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12491 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27248 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 50272 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30990 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68203 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121582 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32768 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74252 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128536 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12121 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27368 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48480 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30786 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68755 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121678 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32848 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 73796 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128440 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12748 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27872 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 47328 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30820 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68395 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121742 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32912 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74084 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128504 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12587 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27368 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 47840 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30803 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68611 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121774 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | 
+picnic-bench  | real	0m4.702s
+picnic-bench  | user	0m4.562s
+picnic-bench  | sys	0m0.155s
+picnic-bench  | Tamanho da assinatura:
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32736 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74372 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128248 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12553 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27656 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48160 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30956 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68707 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121390 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | 
+picnic-bench  | --- picnic3_L5 ---
+picnic-bench  | KeyGen + Sign + Verify (10 itera├º├Áes):
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32784 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74276 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128152 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12299 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 26888 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48544 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30888 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68563 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121742 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32864 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74636 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128088 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12364 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27440 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48224 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30939 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68635 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121998 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32928 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74228 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128088 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12282 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27608 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48192 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30837 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68515 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121902 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32704 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74156 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 127800 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12491 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27440 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 49120 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30650 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68395 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121678 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 33008 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 73964 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128440 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12488 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 28040 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48320 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30871 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68635 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121710 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32768 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74228 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 127928 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12409 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27584 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 49536 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30803 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68515 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121550 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32800 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74252 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128216 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12378 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 26960 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48736 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30990 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68587 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121646 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32720 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 73964 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128344 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12361 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27224 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48352 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30718 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68707 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121646 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32880 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 74228 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 127864 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 11799 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 28064 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48256 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30752 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68227 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121518 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32864 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 73940 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_FS
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 128344 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_UR
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L1
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12361 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L3
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 28088 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic3_L5
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 49856 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L1_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30820 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L3_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68203 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | Picnic example with parameter set: Picnic_L5_full
+picnic-bench  | Generating key...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121614 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Testing public key serialization...  success
+picnic-bench  | Testing private key serialization...  success
+picnic-bench  | 
+picnic-bench  | 
+picnic-bench  | real	0m4.214s
+picnic-bench  | user	0m4.114s
+picnic-bench  | sys	0m0.124s
+picnic-bench  | Tamanho da assinatura:
+picnic-bench  | Max signature length 34032 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 32848 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 53961 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 53961 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 76772 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 73820 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 121845 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121845 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 132856 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 127928 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 209506 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 209506 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 14608 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 12169 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 35024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 27536 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 61024 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 48800 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 32061 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 30769 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 71179 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 68323 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | Max signature length 126286 bytes
+picnic-bench  | Signing a 500 byte message...  success, signature is 121966 bytes
+picnic-bench  | Verifying signature...  success
+picnic-bench  | 
+picnic-bench  | Resultados guardados em: results/bench_output.txt
+
+[Kpicnic-bench exited with code 0

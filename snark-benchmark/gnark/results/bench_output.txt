@@ -1,0 +1,34 @@
+﻿
+======================================================================
+ BENCHMARK: Groth16 ÔÇô C├║bico (x┬│+x+5=y)
+======================================================================
+[90m18:08:52[0m [32mINF[0m compiling circuit
+[90m18:08:52[0m [32mINF[0m parsed circuit inputs [36mnbPublic=[0m1 [36mnbSecret=[0m1
+[90m18:08:52[0m [32mINF[0m building constraint builder [36mnbConstraints=[0m3
+Compile:    370.102┬Ás  (3 constraints R1CS)
+Setup:      3.155475ms
+Witness:    54.986┬Ás
+[90m18:08:52[0m [33mDBG[0m constraint system solver done [36mnbConstraints=[0m3 [36mtook=[0m0.026674
+[90m18:08:52[0m [33mDBG[0m prover done [36mbackend=[0mgroth16 [36mcurve=[0mbn254 [36mnbConstraints=[0m3 [36mtook=[0m2.105861
+Prove:      2.33062ms
+[90m18:08:52[0m [33mDBG[0m verifier done [36mbackend=[0mgroth16 [36mcurve=[0mbn254 [36mtook=[0m1.77772
+Verify:     1.89227ms
+----------------------------------------------------------------------
+
+======================================================================
+ BENCHMARK: Groth16 ÔÇô Multiplica├º├úo de Matrizes 4├ù4
+======================================================================
+[90m18:08:52[0m [32mINF[0m compiling circuit
+[90m18:08:52[0m [32mINF[0m parsed circuit inputs [36mnbPublic=[0m16 [36mnbSecret=[0m32
+[90m18:08:52[0m [32mINF[0m building constraint builder [36mnbConstraints=[0m80
+Compile:    532.562┬Ás  (80 constraints R1CS)
+Setup:      9.49039ms
+Witness:    159.138┬Ás
+[90m18:08:53[0m [33mDBG[0m constraint system solver done [36mnbConstraints=[0m80 [36mtook=[0m0.057819
+[90m18:08:53[0m [33mDBG[0m prover done [36mbackend=[0mgroth16 [36mcurve=[0mbn254 [36mnbConstraints=[0m80 [36mtook=[0m5.291462
+Prove:      5.540672ms
+[90m18:08:53[0m [33mDBG[0m verifier done [36mbackend=[0mgroth16 [36mcurve=[0mbn254 [36mtook=[0m1.834786
+Verify:     1.994383ms
+----------------------------------------------------------------------
+
+Benchmarks conclu├¡dos. Resultados em: results/bench_output.txt

@@ -1,0 +1,57 @@
+# gnark - Benchmarks SNARK (Groth16 / BN254)
+
+Framework em Go da Consensys para provas Groth16. Compila circuitos para R1CS em tempo de execucao, sem ficheiros externos.
+
+## Circuitos
+
+| Circuito | Tipo | Constraints R1CS | Benchmark analogo (VOLE) |
+|---|---|---|---|
+| `CubicCircuit` - x^3+x+5=y | Aritmetico (baseline) | 3 | - |
+| `MatrixCircuit` - A*B=C (4x4) | Aritmetico | 80 | `bench_matrix` (emp-zk) |
+
+## Ambiente de Teste
+
+- **Maquina:** Windows 11 (via Docker, imagem `golang:1.21`)
+- **Curva:** BN254
+- **Backend:** Groth16
+- **Execucoes:** 2 runs (valores medios apresentados)
+
+## Resultados
+
+### Circuito Cubico (x^3+x+5=y) - 3 constraints
+
+| Operacao | Run 1 | Run 2 | Media |
+|---|---|---|---|
+| Compile (circuito -> R1CS) | 286 us | 370 us | 328 us |
+| Setup (Groth16 pk + vk)    | 3.6 ms | 3.2 ms | 3.4 ms |
+| Witness                     | 39 us  | 55 us  | 47 us  |
+| Prove                       | 3.6 ms | 2.3 ms | 3.0 ms |
+| Verify                      | 1.6 ms | 1.9 ms | 1.7 ms |
+
+### Multiplicacao de Matrizes 4x4 - 80 constraints
+
+| Operacao | Run 1 | Run 2 | Media |
+|---|---|---|---|
+| Compile (circuito -> R1CS) | 424 us  | 532 us  | 478 us  |
+| Setup (Groth16 pk + vk)    | 13.3 ms | 9.5 ms  | 11.4 ms |
+| Witness                     | 133 us  | 159 us  | 146 us  |
+| Prove                       | 12.5 ms | 5.5 ms  | 9.0 ms  |
+| Verify                      | 1.2 ms  | 2.0 ms  | 1.6 ms  |
+
+## Observacoes
+
+- O **Verify e ~5x mais rapido que o Prove** - propriedade fundamental dos SNARKs.
+- O **Setup escala com o numero de constraints**: 3.4 ms (3 constraints) vs 11.4 ms (80 constraints).
+- O tamanho da prova Groth16 e **constante (~200 bytes)** independentemente do tamanho do circuito.
+- Comparando com o emp-zk (VOLE): o Prove do gnark e mais lento mas a prova e
+  nao-interativa e verificavel por qualquer pessoa sem comunicacao em rede.
+
+## Como Correr
+
+```powershell
+# Dentro da pasta snark-benchmark\gnark
+docker run --rm -v ${PWD}:/app -w /app golang:1.21 bash -c "go mod tidy && go run main.go"
+
+# Para guardar os resultados sem encoding estragado
+docker run --rm -v ${PWD}:/app -w /app golang:1.21 bash -c "go mod tidy && go run main.go 2>&1" | Set-Content -Encoding utf8 results\bench_output.txt
+```

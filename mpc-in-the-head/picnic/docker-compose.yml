@@ -1,0 +1,7 @@
+services:
+  picnic-bench:
+    build: .
+    container_name: picnic-bench
+    volumes:
+      - ./results:/picnic/results
+    command: /run_bench.sh

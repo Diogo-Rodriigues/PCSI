@@ -1,0 +1,8 @@
+{
+  "name": "circom-benchmarks",
+  "version": "1.0.0",
+  "description": "PCSI – Benchmarks Circom/Groth16",
+  "dependencies": {
+    "circomlib": "^2.0.5"
+  }
+}

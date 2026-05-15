@@ -1,0 +1,7 @@
+services:
+  ligero-bench:
+    build: .
+    container_name: ligero-bench
+    volumes:
+      - ./results:/results
+    command: /run_bench.sh

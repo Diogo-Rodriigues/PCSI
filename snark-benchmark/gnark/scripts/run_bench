@@ -1,0 +1,18 @@
+#!/bin/bash
+# =============================================================================
+# Benchmark: gnark (Groth16 sobre BN254)
+#
+# Dependências: Go >= 1.21
+#   go mod download     (descarrega as dependências)
+# =============================================================================
+set -e
+mkdir -p results
+
+echo "A descarregar dependências..."
+go mod download
+
+echo "A correr benchmarks..."
+go run main.go 2>&1 | tee results/bench_output.txt
+
+echo ""
+echo "Resultados guardados em: results/bench_output.txt"

@@ -1,0 +1,44 @@
+================================================================
+ BENCHMARK: Ligero (IOP-based zk-SNARK over R1CS)
+ Fri May 15 13:34:39 UTC 2026
+================================================================
+
+Binary:        /libiop/build/libiop/instrument_ligero_snark
+Args:          --log_n_min=8 --log_n_max=16
+
+Parameters:
+  Security level:       128 bits (achieved: 129.3)
+  Field size:           181 bits
+  Hash:                 blake2b (256-bit digest)
+  Domain type:          multiplicative coset
+  RS extra dimensions:  2
+  Height/width ratio:   0.1
+  Zero-knowledge:       disabled
+  LDT soundness:        heuristic
+
+================================================================
+
+  log_n  | constraints |  prover  | verifier | proof oracles | merkle |  m2
+  -------+-------------+----------+----------+---------------+--------+-----
+     8   |     256     |  0.025s  |  0.023s  |     96 KB     |  16 KB |   4
+     9   |     512     |  0.024s  |  0.024s  |    192 KB     |  32 KB |   4
+    10   |    1024     |  0.041s  |  0.040s  |    384 KB     |  32 KB |   8
+    11   |    2048     |  0.073s  |  0.067s  |    768 KB     |  64 KB |   8
+    12   |    4096     |  0.146s  |  0.132s  |   1536 KB     |  64 KB |  16
+    13   |    8192     |  0.289s  |  0.227s  |   3072 KB     | 128 KB |  16
+    14   |   16384     |  0.745s  |  0.432s  |   6144 KB     | 128 KB |  32
+    15   |   32768     |  1.166s  |  0.892s  |  12288 KB     | 256 KB |  32
+    16   |   65536     |  2.554s  |  1.417s  |  24576 KB     | 256 KB |  64
+
+================================================================
+ SUMMARY
+================================================================
+
+  Iterations run:       9 (log_n = 8..16)
+  Total wall time:      ~11.7 s
+  Prover scaling:       approx. linear in N (slightly super-linear at large N)
+  Verifier scaling:     sub-linear relative to prover (ratio ~1.8x at log_n=16)
+  All proofs verified:  OK
+
+  Done.
+================================================================
