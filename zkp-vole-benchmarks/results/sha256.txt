@@ -1,0 +1,36 @@
+alice-sha256  | connected
+
+alice-sha256  | Time for Setup: 1.87898e+06 us
+
+alice-sha256  | Time for SHA256: 146068 us
+
+alice-sha256  | Time for Check: 3 us
+
+alice-sha256  | Time for Finalize: 112570 us
+
+
+
+alice-sha256 exited with code 0
+
+
+alice-sha256  | sent bits:860710w Config   w Enable Watch   d Detach
+
+alice-sha256  | received bits:840961
+
+
+
+bob-sha256    | connected
+
+bob-sha256    | Time for Setup: 1.87028e+06 us
+
+bob-sha256    | Time for SHA256: 124818 us
+
+bob-sha256    | Time for Check: 4 us
+
+bob-sha256    | Time for Finalize: 139353 us
+
+bob-sha256    | sent bits:840961
+
+bob-sha256    | received bits:860710
+
+bob-sha256 exited with code 0

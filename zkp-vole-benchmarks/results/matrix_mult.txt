@@ -1,0 +1,33 @@
+Attaching to alice-matrix, bob-matrix
+
+bob-matrix    | connected
+alice-matrix  | connected
+
+alice-matrix  | Testing MatMul
+bob-matrix    | Testing MatMul
+
+
+alice-matrix  | Time for Setup: 1.71776e+06 us
+bob-matrix    | Time for Setup: 1.68929e+06 us
+
+
+alice-matrix  | Time for MatMul: 4074 us
+bob-matrix    | Time for MatMul: 2216 us
+
+
+alice-matrix  | Time for Check: 14 us
+bob-matrix    | Time for Check: 19 us
+
+
+alice-matrix  | Time for Finalize: 34523 us
+bob-matrix exited with code 0
+bob-matrix    | Time for Finalize: 31905 us
+
+
+alice-matrix  | sent bits:2357922
+alice-matrix exited with code 0
+bob-matrix    | sent bits:2402113
+
+
+alice-matrix  | received bits:2402113
+bob-matrix    | received bits:2357922
