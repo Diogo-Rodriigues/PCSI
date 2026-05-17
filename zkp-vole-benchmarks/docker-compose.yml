@@ -10,6 +10,15 @@ x-emp-base: &emp-base
   volumes:
     - ./results:/zk-benchmarks/bin/data
 
+x-picozk-base: &picozk-base
+  build:
+    context: .
+    dockerfile: docker/Dockerfile.picozk
+  image: picozk-benchmarks:latest
+  network_mode: "host"
+  volumes:
+    - ./results:/zk-benchmarks/data
+
 services:
   # 1. BENCHMARK: MULTIPLICAÇÃO DE MATRIZES
   alice-matrix:
@@ -39,3 +48,49 @@ services:
     depends_on:
       - alice-sha256
     command: ./bench_sha256 2 12345
+
+  # O Provador (Party 2) corre o Python primeiro para gerar os ficheiros, e depois arranca o Rust
+  alice-picozk-matrix:
+    <<: *picozk-base
+    container_name: alice-picozk-matrix
+    command: >
+      bash -c "
+      echo 'A gerar circuito em Python...' &&
+      python3 src/matmul.py &&
+      echo 'A iniciar Prova ZK (Rust)...' &&
+      /swanky/diet-mac-and-cheese/target/release/dietmc --text --config config.toml --relation picozk_test.rel --instance picozk_test.type0.ins --witness picozk_test.type0.wit --connection-addr 127.0.0.1:7876
+      "
+
+  bob-picozk-matrix:
+    <<: *picozk-base
+    container_name: bob-picozk-matrix
+    depends_on:
+      - alice-picozk-matrix
+    command: >
+      bash -c "
+      sleep 2 &&
+      echo 'A iniciar Verificação ZK (Rust)...' &&
+      /swanky/diet-mac-and-cheese/target/release/dietmc --text --config config.toml --relation picozk_test.rel --instance picozk_test.type0.ins --connection-addr 127.0.0.1:7876
+      "
+  alice-picozk-sha256:
+    <<: *picozk-base
+    container_name: alice-picozk-sha256
+    command: >
+      bash -c "
+      echo 'A gerar circuito SHA-256 em Python...' &&
+      python3 src/sha256.py &&
+      echo 'A iniciar Prova ZK (Rust)...' &&
+      /swanky/diet-mac-and-cheese/target/release/dietmc --text --config config.toml --relation picozk_test.rel --instance picozk_test.type0.ins --witness picozk_test.type0.wit --connection-addr 127.0.0.1:7877
+      "
+
+  bob-picozk-sha256:
+    <<: *picozk-base
+    container_name: bob-picozk-sha256
+    depends_on:
+      - alice-picozk-sha256
+    command: >
+      bash -c "
+      sleep 2 &&
+      echo 'A iniciar Verificação ZK (Rust)...' &&
+      /swanky/diet-mac-and-cheese/target/release/dietmc --text --config config.toml --relation picozk_test.rel --instance picozk_test.type0.ins --connection-addr 127.0.0.1:7877
+      "
