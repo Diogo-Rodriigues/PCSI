@@ -2,43 +2,59 @@
 use std::time::Instant;
 use methods::{METHOD_ELF, METHOD_ID};
 use risc0_zkvm::{default_prover, ExecutorEnv};
+use std::fs;
+use std::io::Write;
 
 fn main() {
-    // Configuração das Matrizes (Exemplo 8x8)
     let n: usize = 8;
-    let a: Vec<u32> = vec![1; n * n]; // Preenchido com 1s para teste
-    let b: Vec<u32> = vec![2; n * n]; // Preenchido com 2s para teste
+    let a: Vec<u32> = vec![1; n * n];
+    let b: Vec<u32> = vec![2; n * n];
 
-    // Preparar o ambiente do Executor
-    // Enviamos (a, b, n) como uma tupla, tal como o Guest espera ler
     let env = ExecutorEnv::builder()
         .write(&(a, b, n))
         .unwrap()
         .build()
         .unwrap();
 
-    // Inicializar o Prover
     let prover = default_prover();
 
     println!("A iniciar a geração da prova (Aritmética)...");
+    
     let start_time = Instant::now();
-
-    // Gerar a prova (Prove)
-    // O Prover executa o Guest e gera a prova STARK
     let prove_info = prover.prove(env, METHOD_ELF).unwrap();
     let receipt = prove_info.receipt;
+    let proof_duration = start_time.elapsed();
 
-    let duration = start_time.elapsed();
-
-    // Verificar a prova
-    // Qualquer pessoa com o ID do método e o Receipt pode verificar a integridade
+    let start_verify = Instant::now();
     receipt.verify(METHOD_ID).unwrap();
+    let verify_duration = start_verify.elapsed();
 
-    //Extrair o resultado do Journal
     let result: Vec<u32> = receipt.journal.decode().unwrap();
 
     println!("Sucesso! Prova gerada e verificada.");
-    println!("Tempo de execução: {:?}", duration);
+    println!("Tempo de prova: {:.6} s", proof_duration.as_secs_f64());
+    println!("Tempo de verificação: {:.6} s", verify_duration.as_secs_f64());
     println!("Primeiro elemento do resultado: {}", result[0]);
-    // Numa matriz 8x8 de 1s por 2s, o resultado deve ser 1*2 * 8 = 16
+    
+    std::fs::create_dir_all("results").expect("Não foi possível criar a pasta results");
+    
+    let receipt_bytes_len = receipt.journal.bytes.len();
+
+    let log_entry = format!(
+        "Matrix_Size: {}, Proof_Time: {:.6} s, Proof_Size: {} B, Verify_Time: {:.6} s\n",
+        n, 
+        proof_duration.as_secs_f64(), 
+        receipt_bytes_len,
+        verify_duration.as_secs_f64()
+    );
+
+    let mut file = std::fs::OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open("results/benchmarks.txt")
+        .expect("Não foi possível abrir o ficheiro de resultados");
+
+    file.write_all(log_entry.as_bytes()).expect("Erro ao escrever no ficheiro");
+
+    println!(">>> Resultados salvos com sucesso em: results/benchmarks.txt");
 }
