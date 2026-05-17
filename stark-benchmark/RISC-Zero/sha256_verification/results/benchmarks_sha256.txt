@@ -1,0 +1,2 @@
+Workload: SHA-256, Proof_Time: 23.205213 s, Proof_Size: 4 B, Verify_Time: 0.027612 s
+Workload: SHA-256, Proof_Time: 94.379393 s, Proof_Size: 4 B, Verify_Time: 0.030407 s
