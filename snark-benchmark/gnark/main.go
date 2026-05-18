@@ -3,15 +3,12 @@ package main
 // =============================================================================
 // PCSI – Benchmarks gnark (Groth16 sobre BN254)
 //
-// Dois circuitos, análogos ao que o colega fez com emp-zk:
-//   1. MatrixCircuit  – Multiplicação de Matrizes 4×4 (aritmético)
-//   2. CubicCircuit   – x³+x+5=y (baseline aritmético simples)
-//
 // Corre com:  go run main.go
 // Benchmark:  go test -v -bench=. -benchmem -count=3 | tee results/bench_output.txt
 // =============================================================================
 
 import (
+	"crypto/sha256"
 	"fmt"
 	"os"
 	"time"
@@ -20,6 +17,8 @@ import (
 	"github.com/consensys/gnark/backend/groth16"
 	"github.com/consensys/gnark/frontend"
 	"github.com/consensys/gnark/frontend/cs/r1cs"
+	"github.com/consensys/gnark/std/hash/sha2"
+	"github.com/consensys/gnark/std/math/uints"
 )
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -50,19 +49,36 @@ func (c *MatrixCircuit) Define(api frontend.API) error {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Circuito 2 – Polinómio Cúbico (baseline)
+// Circuito 2 – SHA-256 Preimage
 //
-// Prova: "Conheço x tal que x³ + x + 5 = y"
-// y é público; x é o witness privado.
+// Prova: "Conheço x tal que SHA-256(x) = digest" sem revelar x.
+// O digest é público; x (preimage) é o witness privado.
 // ─────────────────────────────────────────────────────────────────────────────
-type CubicCircuit struct {
-	X frontend.Variable
-	Y frontend.Variable `gnark:",public"`
+const PreimageLen = 64 // 64 bytes (512 bits), igual ao benchmark Circom
+
+type Sha256Circuit struct {
+	Input  [PreimageLen]uints.U8           // privado (preimage)
+	Output [32]uints.U8 `gnark:",public"` // público (digest)
 }
 
-func (c *CubicCircuit) Define(api frontend.API) error {
-	x3 := api.Mul(c.X, c.X, c.X)
-	api.AssertIsEqual(c.Y, api.Add(x3, c.X, 5))
+func (c *Sha256Circuit) Define(api frontend.API) error {
+	h, err := sha2.New(api)
+	if err != nil {
+		return fmt.Errorf("new sha2: %w", err)
+	}
+
+	for i := 0; i < PreimageLen; i++ {
+		h.Write([]uints.U8{c.Input[i]})
+	}
+	res := h.Sum()
+
+	uapi, err := uints.New[uints.U32](api)
+	if err != nil {
+		return fmt.Errorf("new uints api: %w", err)
+	}
+	for i := 0; i < 32; i++ {
+		uapi.ByteAssertEq(c.Output[i], res[i])
+	}
 	return nil
 }
 
@@ -83,8 +99,7 @@ func runBenchmark(name string, circuit frontend.Circuit, assignment frontend.Cir
 		fmt.Fprintf(os.Stderr, "Compile error: %v\n", err)
 		return
 	}
-	compileTime := time.Since(t0)
-	fmt.Printf("Compile:    %v  (%d constraints R1CS)\n", compileTime, ccs.GetNbConstraints())
+	fmt.Printf("Compile:    %v  (%d constraints R1CS)\n", time.Since(t0), ccs.GetNbConstraints())
 
 	// 2. Trusted Setup Groth16
 	t0 = time.Now()
@@ -112,8 +127,7 @@ func runBenchmark(name string, circuit frontend.Circuit, assignment frontend.Cir
 		fmt.Fprintf(os.Stderr, "Prove error: %v\n", err)
 		return
 	}
-	proveTime := time.Since(t0)
-	fmt.Printf("Prove:      %v\n", proveTime)
+	fmt.Printf("Prove:      %v\n", time.Since(t0))
 
 	// 5. Verificar prova
 	t0 = time.Now()
@@ -122,22 +136,13 @@ func runBenchmark(name string, circuit frontend.Circuit, assignment frontend.Cir
 		fmt.Fprintf(os.Stderr, "Verify FAILED: %v\n", err)
 		return
 	}
-	verifyTime := time.Since(t0)
-	fmt.Printf("Verify:     %v\n", verifyTime)
+	fmt.Printf("Verify:     %v\n", time.Since(t0))
 	fmt.Printf("----------------------------------------------------------------------\n")
 	_ = pk
 }
 
 func main() {
-	// ── Benchmark 1: Cúbico (baseline) ───────────────────────────────────────
-	// x=3 → 3³+3+5 = 35
-	runBenchmark(
-		"Groth16 – Cúbico (x³+x+5=y)",
-		&CubicCircuit{},
-		&CubicCircuit{X: 3, Y: 35},
-	)
-
-	// ── Benchmark 2: Multiplicação de Matrizes 4×4 ───────────────────────────
+	// ── Benchmark 1: Multiplicação de Matrizes 4×4 ───────────────────────────
 	// A = [[1..4],[5..8],[9..12],[13..16]], B = I₄, C = A
 	var matCircuit MatrixCircuit
 	var matAssign MatrixCircuit
@@ -156,6 +161,28 @@ func main() {
 		"Groth16 – Multiplicação de Matrizes 4×4",
 		&matCircuit,
 		&matAssign,
+	)
+
+	// ── Benchmark 2: SHA-256 Preimage ────────────────────────────────────────
+	// preimage = 64 bytes a zero (igual ao benchmark Circom)
+	// digest esperado: f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b
+	preimage := make([]byte, PreimageLen)
+	digest := sha256.Sum256(preimage)
+
+	var sha256Circuit Sha256Circuit
+
+	var sha256Assign Sha256Circuit
+	for i := 0; i < PreimageLen; i++ {
+		sha256Assign.Input[i] = uints.NewU8(preimage[i])
+	}
+	for i := 0; i < 32; i++ {
+		sha256Assign.Output[i] = uints.NewU8(digest[i])
+	}
+
+	runBenchmark(
+		"Groth16 – SHA-256 Preimage (64 bytes)",
+		&sha256Circuit,
+		&sha256Assign,
 	)
 
 	fmt.Println("\nBenchmarks concluídos. Resultados em: results/bench_output.txt")
