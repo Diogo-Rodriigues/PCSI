@@ -7,31 +7,102 @@ Ligero é um sistema de prova baseado em **IOPs** (Interactive Oracle Proofs) e 
 | | Ligero | Circom/gnark (Groth16) | emp-zk (VOLE) | Picnic |
 |---|---|---|---|---|
 | Família | IOP / MPC-in-the-Head | SNARK | VOLE | MPC-in-the-Head |
-| Trusted setup |  Não precisa |  Sim (Powers of Tau) |  Não |  Não |
+| Trusted setup | Não precisa | Sim (Powers of Tau) | Não | Não |
 | Interação | Não (Fiat-Shamir) | Não | Sim (2 partes) | Não |
-| Tamanho prova | Grande (KBs–MBs) | Pequeno (~200 bytes) | N/A (interativo) | Grande (~14–48 KB) |
-| Velocidade prove | Rápido | Lento (trusted setup caro) | Muito rápido | Moderado |
+| Tamanho prova | Grande (KBs–MBs) | Pequeno (~200–800 bytes) | N/A (interativo) | Grande (~14–48 KB) |
+| Velocidade prove | Moderado | Lento (trusted setup caro) | Muito rápido | Moderado |
 
 ## Implementação usada
 
 **libiop** (SCIPR Lab) – inclui Ligero, Aurora e Fractal.
 - Repositório: https://github.com/scipr-lab/libiop
+- Binário: `instrument_ligero_snark`
 
-## Correr com Docker (recomendado)
+## Ambiente de Teste
+
+- **Máquina:** Windows 11 (via Docker)
+- **Segurança:** 128 bits
+- **Campo:** F_p com p de 181 bits
+- **Hash:** Blake2b
+- **Zero-knowledge:** desativado (modo benchmark)
+- **Tipo de domínio:** multiplicative coset
+
+## Resultados – Sweep de Escalabilidade R1CS
+
+O Ligero foi avaliado sobre instâncias R1CS genéricas de tamanhos crescentes (256 a 65 536 constraints). Esta abordagem é standard para frameworks académicos como o libiop, que operam sobre R1CS parametrizável.
+
+| Constraints R1CS | Prover Time | Verifier Time | Proof Size (total) |
+|---|---|---|---|
+| 256 | 25.5 ms | 23.5 ms | 102 KB |
+| 512 | 25.7 ms | 35.2 ms | 180 KB |
+| 1 024 | 49.7 ms | 54.3 ms | 331 KB |
+| 2 048 | 102.0 ms | 95.9 ms | 485 KB |
+| 4 096 | 162.9 ms | 140.8 ms | 908 KB |
+| 8 192 | 333.9 ms | 234.7 ms | 1.12 MB |
+| 16 384 | 668.2 ms | 514.2 ms | 2.12 MB |
+| 32 768 | 1.526 s | 1.037 s | 2.46 MB |
+| 65 536 | 2.715 s | 1.925 s | 4.67 MB |
+
+### Mapeamento para os workloads do artigo
+
+Para comparação com os outros frameworks nas tabelas do artigo:
+
+| Workload | Constraints equivalentes | Prover Time | Verifier Time | Proof Size |
+|---|---|---|---|---|
+| Matriz 4×4 (~80 constraints) | 256 (mais próximo) | 25.5 ms | 23.5 ms | 102 KB |
+| SHA-256 (~28k constraints) | 32 768 (mais próximo) | 1.526 s | 1.037 s | 2.46 MB |
+
+## Observações
+
+- O **Ligero não requer trusted setup** – todos os parâmetros são derivados publicamente
+  (transparente), ao contrário de Groth16.
+- O **tamanho da prova cresce com o circuito**: de 102 KB (256 constraints) a 4.67 MB
+  (65k constraints). Este é o principal trade-off face aos SNARKs, que mantêm provas
+  constantes (~200-800 bytes).
+- O **Prover e Verifier têm tempos semelhantes** – ao contrário dos SNARKs onde o
+  Verify é muito mais rápido que o Prove. No Ligero, o Verifier também precisa de
+  recalcular os hashes e verificar as queries de proximidade.
+- A **segurança alcançada (129.3 bits)** excede o target de 128 bits.
+- Comparando com o emp-zk (VOLE): o Ligero é mais lento no Prove mas gera provas
+  não-interativas (via Fiat-Shamir), enquanto o emp-zk requer comunicação bidirecional
+  entre prover e verifier.
+
+## Como Correr
+
+### Com Docker (recomendado)
 
 ```bash
 docker-compose up --build
 ```
 
-## Correr localmente
+### Localmente
 
 ```bash
 # Compilar o libiop
 git clone --recursive https://github.com/scipr-lab/libiop.git
 cd libiop && mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release -DWITH_PROCPS=OFF ..
-make -j$(nproc) ligero_snark_test
+make -j$(nproc) instrument_ligero_snark
 
-# Correr benchmark
-bash scripts/run_bench.sh
+# Correr benchmark (sweep de 2^8 a 2^16 constraints)
+./instrument_ligero_snark \
+  --log_n_min=8 --log_n_max=16 \
+  --security_level=128 --field_size=181 \
+  --heuristic_ldt_reducer_soundness=1 \
+  --is_multiplicative=1 --make_zk=0 \
+  --hash_enum=1 --height_width_ratio=0.1 \
+  --RS_extra_dimensions=2
 ```
+
+## Parâmetros do Protocolo
+
+| Parâmetro | Valor |
+|---|---|
+| Security level (target) | 128 bits |
+| Security level (achieved) | 129.3 bits |
+| Systematic domain dim | 6 |
+| Codeword domain dim | 8 |
+| RS extra dimensions | 2 |
+| Hash | Blake2b (256-bit digest) |
+| LDT soundness type | heuristic |
+| LDT queries | 699 (para 256 constraints) |
