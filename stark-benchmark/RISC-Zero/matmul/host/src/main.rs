@@ -5,7 +5,7 @@ use std::io::Write;
 use matmul_methods::{MATMUL_ELF, MATMUL_ID};
 use risc0_zkvm::{default_prover, ExecutorEnv};
 
-const MATRIX_SIZE: usize = 32;
+const MATRIX_SIZE: usize = 4;
 
 fn main() {
     let a: Vec<u8> = vec![0; MATRIX_SIZE * MATRIX_SIZE];
@@ -25,7 +25,9 @@ fn main() {
     let info = prover.prove(env, MATMUL_ELF).unwrap();
     let proof_time_secs = start_proof.elapsed().as_secs_f64();
 
-    let proof_size = info.receipt.journal.bytes.len();
+    let receipt_serialized = bincode::serialize(&info.receipt).unwrap();
+    let receipt_bytes_len = receipt_serialized.len();
+    let proof_size = receipt_bytes_len as f64 / 1024.0;
 
     let start_verify = time::Instant::now();
     info.receipt.verify(MATMUL_ID).unwrap();
@@ -36,13 +38,13 @@ fn main() {
 
     println!("\n--- RESULTADOS DO TESTE ---");
     println!("Proof time: {:.6} s", proof_time_secs);
-    println!("Proof size: {} B", proof_size);
+    println!("Proof size: {:.2} KB", proof_size);
     println!("Verify time: {:.6} s", verify_time_secs);
 
     fs::create_dir_all("results").expect("Não foi possível criar a pasta results");
 
     let log_entry = format!(
-        "Matrix_Size: {}, Proof_Time: {:.6} s, Proof_Size: {} B, Verify_Time: {:.6} s\n",
+        "Matrix_Size: {}, Proof_Time: {:.6} s, Proof_Size: {:.2} KB, Verify_Time: {:.6} s\n",
         MATRIX_SIZE, proof_time_secs, proof_size, verify_time_secs
     );
 

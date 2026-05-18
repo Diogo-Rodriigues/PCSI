@@ -6,7 +6,7 @@ use std::fs;
 use std::io::Write;
 
 fn main() {
-    let n: usize = 8;
+    let n: usize = 32;
     let a: Vec<u32> = vec![1; n * n];
     let b: Vec<u32> = vec![2; n * n];
 
@@ -38,13 +38,19 @@ fn main() {
     
     std::fs::create_dir_all("results").expect("Não foi possível criar a pasta results");
     
-    let receipt_bytes_len = receipt.journal.bytes.len();
+    let journal_bytes_len = receipt.journal.bytes.len();
+
+    let receipt_cbor = risc0_zkvm::serde::to_vec(&receipt).unwrap();
+    let total_bytes_len = receipt_cbor.len() * 4;
+    let seal_bytes_len = total_bytes_len - journal_bytes_len;
+
+    let proof_size = (journal_bytes_len + seal_bytes_len) as f64 / 1024.0;
 
     let log_entry = format!(
-        "Matrix_Size: {}, Proof_Time: {:.6} s, Proof_Size: {} B, Verify_Time: {:.6} s\n",
+        "Matrix_Size: {}, Proof_Time: {:.6} s, Proof_Size: {:.2} KB, Verify_Time: {:.6} s\n",
         n, 
         proof_duration.as_secs_f64(), 
-        receipt_bytes_len,
+        proof_size,
         verify_duration.as_secs_f64()
     );
 

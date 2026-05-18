@@ -36,12 +36,19 @@ fn main() {
     println!("Sucesso! O Guest provou que o Hash é válido? -> {}", is_valid);
 
     fs::create_dir_all("results").expect("Não foi possível criar a pasta results");
-    let receipt_bytes_len = receipt.journal.bytes.len();
+    
+    let journal_bytes_len = receipt.journal.bytes.len();
+
+    let receipt_cbor = risc0_zkvm::serde::to_vec(&receipt).unwrap();
+    let total_bytes_len = receipt_cbor.len() * 4;
+    let seal_bytes_len = total_bytes_len - journal_bytes_len;
+
+    let proof_size = (journal_bytes_len + seal_bytes_len) as f64 / 1024.0;
 
     let log_entry = format!(
-        "Workload: SHA-256, Proof_Time: {:.6} s, Proof_Size: {} B, Verify_Time: {:.6} s\n",
+        "Workload: SHA-256, Proof_Time: {:.6} s, Proof_Size: {:.2} KB, Verify_Time: {:.6} s\n",
         proof_duration.as_secs_f64(), 
-        receipt_bytes_len,
+        proof_size,
         verify_duration.as_secs_f64()
     );
 

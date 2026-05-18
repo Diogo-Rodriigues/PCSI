@@ -1,3 +1,4 @@
-Matrix_Size: 8, Proof_Time: 22.764357 s, Proof_Size: 260 B, Verify_Time: 0.027287 s
-Matrix_Size: 16, Proof_Time: 46.579700 s, Proof_Size: 4 B, Verify_Time: 0.029344 s
-Matrix_Size: 32, Proof_Time: 192.381896 s, Proof_Size: 4 B, Verify_Time: 0.032675 s
+Matrix_Size: 8, Proof_Time: 23.212571 s, Proof_Size: 216.03 KB, Verify_Time: 0.030625 s
+Matrix_Size: 16, Proof_Time: 47.086028 s, Proof_Size: 238.53 KB, Verify_Time: 0.028994 s
+Matrix_Size: 32, Proof_Time: 198.308650 s, Proof_Size: 261.91 KB, Verify_Time: 0.033137 s
+Matrix_Size: 4, Proof_Time: 11.537821 s, Proof_Size: 204.66 KB, Verify_Time: 0.025541 s

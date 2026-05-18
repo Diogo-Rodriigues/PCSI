@@ -1,3 +1,1 @@
-Matrix_Size: 8, Proof_Time: 24.510531 s, Proof_Size: 260 B, Verify_Time: 0.027111 s
-Matrix_Size: 16, Proof_Time: 97.129545 s, Proof_Size: 1028 B, Verify_Time: 0.030602 s
-Matrix_Size: 32, Proof_Time: 391.056465 s, Proof_Size: 4100 B, Verify_Time: 0.038503 s
+Matrix_Size: 32, Proof_Time: 390.419021 s, Proof_Size: 306.85 KB, Verify_Time: 0.024517 s
