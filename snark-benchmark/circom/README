@@ -61,19 +61,6 @@ Framework de circuitos para provas Groth16. Compila para R1CS e usa snarkjs para
 
 ## Como Correr
 
-```powershell
-# Dentro da pasta snark-benchmark\circom
-docker run --rm -v ${PWD}:/app -w /app node:20 bash -c "
-apt-get update -qq && apt-get install -y -qq curl dos2unix &&
-curl -L https://github.com/iden3/circom/releases/latest/download/circom-linux-amd64 -o /usr/local/bin/circom &&
-chmod +x /usr/local/bin/circom &&
-npm install -g snarkjs &&
-dos2unix scripts/run_bench.sh &&
-bash scripts/run_bench.sh"
-
-# Para guardar resultados
-docker run ... | Set-Content -Encoding utf8 results\bench_output.txt
-```
 
 ## Inputs
 

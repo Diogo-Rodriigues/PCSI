@@ -8,7 +8,7 @@ pragma circom 2.0.0;
 // Público  → c[N][N]       : resultado da multiplicação
 // Privado  → a[N][N], b[N][N] : as matrizes (witness)
 //
-// N=4 → 4^3 = 64 multiplicações → 64 constraints R1CS
+// N=32 → 32^3 = 32768 multiplicações → 32768 constraints R1CS
 // ─────────────────────────────────────────────────────────────────────────────
 template MatrixMul(N) {
     signal input a[N][N];    // privado
@@ -30,4 +30,4 @@ template MatrixMul(N) {
     }
 }
 
-component main { public [c] } = MatrixMul(4);
+component main { public [c] } = MatrixMul(32);

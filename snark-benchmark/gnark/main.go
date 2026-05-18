@@ -27,7 +27,7 @@ import (
 // Prova: "Conheço A e B tais que A·B = C" sem revelar A nem B.
 // C é público; A e B são o witness privado.
 // ─────────────────────────────────────────────────────────────────────────────
-const N = 4
+const N = 32
 
 type MatrixCircuit struct {
 	A [N][N]frontend.Variable            // privado
@@ -54,7 +54,7 @@ func (c *MatrixCircuit) Define(api frontend.API) error {
 // Prova: "Conheço x tal que SHA-256(x) = digest" sem revelar x.
 // O digest é público; x (preimage) é o witness privado.
 // ─────────────────────────────────────────────────────────────────────────────
-const PreimageLen = 64 // 64 bytes (512 bits), igual ao benchmark Circom
+const PreimageLen = 64 // 64 bytes (512 bits)
 
 type Sha256Circuit struct {
 	Input  [PreimageLen]uints.U8           // privado (preimage)
@@ -142,8 +142,7 @@ func runBenchmark(name string, circuit frontend.Circuit, assignment frontend.Cir
 }
 
 func main() {
-	// ── Benchmark 1: Multiplicação de Matrizes 4×4 ───────────────────────────
-	// A = [[1..4],[5..8],[9..12],[13..16]], B = I₄, C = A
+	// ── Benchmark 1: Multiplicação de Matrizes 32×32 ─────────────────────────
 	var matCircuit MatrixCircuit
 	var matAssign MatrixCircuit
 	for i := 0; i < N; i++ {
@@ -154,15 +153,14 @@ func main() {
 			} else {
 				matAssign.B[i][j] = 0
 			}
-			matAssign.C[i][j] = i*N + j + 1 // A·I = A
+			matAssign.C[i][j] = i*N + j + 1
 		}
 	}
 	runBenchmark(
-		"Groth16 – Multiplicação de Matrizes 4×4",
+		"Groth16 – Multiplicação de Matrizes 32×32",
 		&matCircuit,
 		&matAssign,
 	)
-
 	// ── Benchmark 2: SHA-256 Preimage ────────────────────────────────────────
 	// preimage = 64 bytes a zero (igual ao benchmark Circom)
 	// digest esperado: f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b

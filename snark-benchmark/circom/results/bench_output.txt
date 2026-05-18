@@ -22,3 +22,79 @@ real	0m0.952s
 user	0m2.418s
 sys	0m1.113s
 Tamanho da prova: 806 bytes
+--- sha256_preimage: PROVE ---
+
+real	0m0.826s
+user	0m11.863s
+sys	0m2.907s
+--- sha256_preimage: VERIFY ---
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+
+real	0m0.719s
+user	0m1.621s
+sys	0m0.380s
+Tamanho da prova: 805 bytes
+--- sha256_preimage: PROVE ---
+
+real	0m2.133s
+user	0m8.697s
+sys	0m1.563s
+--- sha256_preimage: VERIFY ---
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+
+real	0m0.570s
+user	0m1.177s
+sys	0m0.276s
+Tamanho da prova: 805 bytes
+--- sha256_preimage: PROVE ---
+
+real	0m2.531s
+user	0m9.570s
+sys	0m2.145s
+--- sha256_preimage: VERIFY ---
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+
+real	0m0.606s
+user	0m1.307s
+sys	0m0.299s
+Tamanho da prova: 804 bytes
+--- sha256_preimage: PROVE ---
+
+real	0m0.786s
+user	0m12.234s
+sys	0m3.473s
+--- sha256_preimage: VERIFY ---
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+
+real	0m0.566s
+user	0m1.190s
+sys	0m0.219s
+Tamanho da prova: 806 bytes
+--- sha256_preimage: SETUP ---
+Setup Time: 25487 ms
+--- sha256_preimage: PROVE ---
+
+real	0m2.616s
+user	0m0.060s
+sys	0m0.137s
+--- sha256_preimage: VERIFY ---
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+
+real	0m0.763s
+user	0m0.152s
+sys	0m0.167s
+Tamanho da prova: 809 bytes
+--- matrix_mul: SETUP ---
+Setup Time: 26872 ms
+--- matrix_mul: PROVE ---
+
+real	0m3.177s
+user	0m0.122s
+sys	0m0.061s
+--- matrix_mul: VERIFY ---
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+
+real	0m0.771s
+user	0m0.045s
+sys	0m0.168s
+Tamanho da prova: 806 bytes
