@@ -1,69 +1,80 @@
-# Circom - Benchmarks SNARK (Groth16 / BN254)
+# Circom — Benchmarks SNARK (Groth16 / BN254)
 
-Framework de circuitos para provas Groth16. Compila para R1CS e usa snarkjs para setup, prova e verificacao.
+Framework de circuitos para provas Groth16. Compila para R1CS e usa snarkjs para
+setup, prova e verificação.
 
 ## Circuitos
 
-| Circuito | Ficheiro | Constraints R1CS | Benchmark analogo (VOLE) |
+| Circuito | Ficheiro | Constraints R1CS | Benchmark análogo (VOLE) |
 |---|---|---|---|
-| SHA-256 Preimage | `circuits/sha256_preimage.circom` | ~28 000 | `bench_sha256` (emp-zk) |
-| Multiplicacao de Matrizes 4x4 | `circuits/matrix_mul.circom` | 64 | `bench_matrix` (emp-zk) |
+| SHA-256 Preimage | `circuits/sha256_preimage.circom` | 59 313 | `bench_sha256` (emp-zk) |
+| Multiplicação de Matrizes 32×32 | `circuits/matrix_mul.circom` | — | `bench_matrix` (emp-zk) |
 
 ## Ambiente de Teste
 
-- **Maquina:** Windows 11 (via Docker, imagem `node:20`)
-- **Circom:** v2.x (binario oficial, compilado em Rust)
+- **Máquina:** Windows 11 (Git Bash, binários nativos)
+- **Circom:** v2.x (binário oficial, compilado em Rust)
 - **snarkjs:** v0.7.x
 - **Curva:** BN254
 - **Backend:** Groth16
 
 ## Resultados
 
-### SHA-256 Preimage - ~28 000 constraints
+### SHA-256 Preimage — 59 313 constraints
 
-| Operacao | Tempo |
+| Operação | Tempo |
 |---|---|
-| Prove | 4.1 s |
-| Verify | 0.8 s |
-| Tamanho da prova | 805 bytes |
+| Setup (Powers of Tau + Groth16) | 25.487 s |
+| Prove | 2.616 s |
+| Verify | 0.763 s |
+| Tamanho da prova | 809 bytes |
 
-### Multiplicacao de Matrizes 4x4 - 64 constraints
+### Multiplicação de Matrizes 32×32
 
-| Operacao | Tempo |
+| Operação | Tempo |
 |---|---|
-| Prove | 0.9 s |
-| Verify | 0.9 s |
+| Setup (Powers of Tau + Groth16) | 26.872 s |
+| Prove | 3.177 s |
+| Verify | 0.771 s |
 | Tamanho da prova | 806 bytes |
 
 ## Ficheiros Gerados
 
-| Ficheiro | Descricao |
+| Ficheiro | Descrição |
 |---|---|
 | `results/sha256_preimage_proof.json` | Prova gerada para o SHA-256 |
-| `results/sha256_preimage_public.json` | Valores publicos (hash esperado) |
-| `results/sha256_preimage_vkey.json` | Chave de verificacao SHA-256 (49 KB) |
-| `results/matrix_mul_proof.json` | Prova gerada para a multiplicacao |
-| `results/matrix_mul_public.json` | Valores publicos (matriz C) |
-| `results/matrix_mul_vkey.json` | Chave de verificacao matriz (5.6 KB) |
+| `results/sha256_preimage_public.json` | Valores públicos (hash esperado) |
+| `results/sha256_preimage_vkey.json` | Chave de verificação SHA-256 |
+| `results/matrix_mul_proof.json` | Prova gerada para a multiplicação |
+| `results/matrix_mul_public.json` | Valores públicos (matriz C) |
+| `results/matrix_mul_vkey.json` | Chave de verificação matriz |
 | `results/bench_output.txt` | Output completo dos benchmarks |
 
-## Observacoes
+## Observações
 
-- O tamanho da prova e **constante (~805 bytes)** independentemente do circuito --
-  o SHA-256 tem 400x mais constraints que a matriz mas a prova tem o mesmo tamanho.
-  Esta e a propriedade de **succinctness** dos SNARKs.
-- O **Verify e ~5x mais rapido que o Prove** no SHA-256 (0.8s vs 4.1s).
-- A **verification key escala com o circuito**: 49 KB para o SHA-256 vs 5.6 KB para a matriz.
-  E o unico elemento que cresce com a complexidade do circuito.
-- Comparando com o gnark (Groth16 tambem): o circom e mais lento no Prove porque o
-  SHA-256 nao e um circuito ZK-friendly -- tem muitas operacoes booleanas que geram
-  muitos constraints R1CS.
+- O tamanho da prova é **constante (~805–809 bytes)** independentemente do circuito —
+  o SHA-256 tem mais constraints que a matriz mas a prova tem o mesmo tamanho.
+  Esta é a propriedade de **succinctness** dos SNARKs.
+- O **Setup é dominado pelo Powers of Tau**, não pelo circuito em si — por isso os
+  tempos de setup são semelhantes entre os dois benchmarks (~25–27 s) apesar da
+  diferença de constraints.
+- A **verification key escala com o circuito**: cresce com o número de constraints,
+  sendo o único artefacto que reflete a complexidade do circuito.
+- Comparando com o gnark (Groth16 também): o Circom é mais lento no Prove
+  (2.616 s vs 963.9 ms para SHA-256) porque corre via WASM + snarkjs em vez de
+  código nativo Go.
+- O **Verify é consistentemente rápido** (~0.76–0.77 s) — ligeiramente mais lento
+  que o gnark devido ao overhead do snarkjs.
 
 ## Como Correr
 
+```bash
+# Requer Git Bash, circom e snarkjs instalados globalmente
+bash scripts/run_bench.sh
+```
 
 ## Inputs
 
 Os inputs em `input/` foram gerados com `preimage = 0x00...00` (64 bytes a zero):
-- SHA-256 digest: `f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b`
-- Matriz: A = [[1..16]], B = Identidade, C = A
+- **SHA-256** digest esperado: `f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b`
+- **Matriz:** A = [[1..1024]], B = Identidade, C = A (32×32)

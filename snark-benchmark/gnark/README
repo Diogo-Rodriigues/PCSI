@@ -1,83 +1,77 @@
-# gnark - Benchmarks SNARK (Groth16 / BN254)
+# gnark — Benchmarks SNARK (Groth16 / BN254)
 
-Framework em Go da Consensys para provas Groth16. Compila circuitos para R1CS em tempo de execucao, sem ficheiros externos.
+Framework em Go da Consensys para provas Groth16. Compila circuitos para R1CS em
+tempo de execução, sem ficheiros externos.
 
 ## Circuitos
 
-| Circuito | Tipo | Constraints R1CS | Benchmark analogo (VOLE) |
+| Circuito | Tipo | Constraints R1CS | Benchmark análogo (VOLE) |
 |---|---|---|---|
-| `MatrixCircuit` - A*B=C (4x4) | Aritmetico | 80 | `bench_matrix` (emp-zk) |
-| `Sha256Circuit` - SHA-256 preimage | Booleano (via R1CS) | 185 476 | `bench_sha256` (emp-zk) |
+| `MatrixCircuit` — A×B=C (32×32) | Aritmético | 33 792 | `bench_matrix` (emp-zk) |
+| `Sha256Circuit` — SHA-256 preimage | Booleano (via R1CS) | 185 476 | `bench_sha256` (emp-zk) |
 
 ## Ambiente de Teste
 
-- **Maquina:** Windows 11 (via Docker, imagem `golang:1.22-bookworm`)
+- **Máquina:** Windows 11 (Go nativo, sem Docker)
 - **gnark:** v0.11.x
 - **Curva:** BN254
 - **Backend:** Groth16
 
 ## Resultados
 
-### Multiplicacao de Matrizes 4x4 - 80 constraints
+### Multiplicação de Matrizes 32×32 — 33 792 constraints
 
-| Operacao | Tempo |
+| Operação | Tempo |
 |---|---|
-| Compile (circuito -> R1CS) | 14.9 ms |
-| Setup (Groth16 pk + vk) | 13.6 ms |
-| Witness | < 1 ms |
-| Prove | 4.5 ms |
-| Verify | 1.4 ms |
+| Compile (circuito → R1CS) | 40.1 ms |
+| Setup (Groth16 pk + vk) | 840.2 ms |
+| Witness | 1.0 ms |
+| Prove | 74.6 ms |
+| Verify | 1.1 ms |
 
-### SHA-256 Preimage (64 bytes) - 185 476 constraints
+### SHA-256 Preimage (64 bytes) — 185 476 constraints
 
-| Operacao | Tempo |
+| Operação | Tempo |
 |---|---|
-| Compile (circuito -> R1CS) | 1.64 s |
-| Setup (Groth16 pk + vk) | 41.6 s |
+| Compile (circuito → R1CS) | 896.7 ms |
+| Setup (Groth16 pk + vk) | 22.272 s |
 | Witness | < 1 ms |
-| Prove | 965.6 ms |
-| Verify | 2.0 ms |
+| Prove | 963.9 ms |
+| Verify | < 1 ms |
 
-## Observacoes
+## Observações
 
-- O **SHA-256 gera 2 300x mais constraints** que a matriz (185 476 vs 80), confirmando
-  o "impedance mismatch" entre operacoes booleanas e R1CS aritmetico.
-- O **Prove escala dramaticamente**: 4.5 ms (matriz) vs 965.6 ms (SHA-256) — 214x mais lento.
-- O **Verify mantem-se rapido** em ambos os casos (~1-2 ms) — propriedade fundamental dos SNARKs.
-- O **Setup e a operacao mais pesada** para o SHA-256 (41.6 s), pois cresce com o numero
-  de constraints. Para a matriz e quase instantaneo (13.6 ms).
-- Comparando com o Circom (tambem Groth16/BN254): o gnark e significativamente mais
-  rapido no Prove (965 ms vs 4.1 s para SHA-256), porque o gnark compila nativamente
+- O **SHA-256 gera 5.5× mais constraints** que a matriz (185 476 vs 33 792), confirmando
+  o "impedance mismatch" entre operações booleanas e R1CS aritmético.
+- O **Prove escala proporcionalmente**: 74.6 ms (matriz) vs 963.9 ms (SHA-256) — 12.9× mais lento,
+  consistente com o rácio de constraints.
+- O **Verify mantém-se rápido** em ambos os casos (~1 ms) — propriedade fundamental dos SNARKs.
+- O **Setup cresce com as constraints**: 840 ms (33k) vs 22.3 s (185k).
+- Comparando com o Circom (também Groth16/BN254): o gnark é significativamente mais
+  rápido no Prove (963.9 ms vs 2.616 s para SHA-256), porque compila nativamente
   em Go sem depender de WASM/snarkjs.
-- Comparando com o emp-zk (VOLE): o Prove do gnark e mais lento mas a prova e
-  nao-interativa e verificavel por qualquer pessoa sem comunicacao em rede.
+- Comparando com emp-zk (VOLE): o Prove do gnark é mais lento mas a prova é
+  não-interativa e verificável por qualquer pessoa sem comunicação em rede.
 
 ## Como Correr
-
-### Com Docker (recomendado)
-
-```powershell
-# Dentro da pasta snark-benchmark\gnark
-
-# Construir imagem
-docker build -t gnark-bench .
-
-# Correr benchmark
-docker run --rm -v ${PWD}/results:/app/results gnark-bench
-
-# Os resultados ficam em results/bench_output.txt
-```
 
 ### Sem Docker
 
 ```powershell
 # Requer Go 1.22+ instalado
 go mod tidy
-go run main.go 2>&1 | Set-Content -Encoding utf8 results\bench_output.txt
+go run main.go | tee results/bench_output.txt
+```
+
+### Com Docker
+
+```powershell
+docker build -t gnark-bench .
+docker run --rm -v ${PWD}/results:/app/results gnark-bench
 ```
 
 ## Inputs
 
-- **Matriz:** A = [[1..16]], B = Identidade, C = A (mesmo input que o Circom)
+- **Matriz:** A = [[1..1024]], B = Identidade, C = A (32×32, mesmo input que o Circom)
 - **SHA-256:** preimage = 64 bytes a zero, digest esperado:
   `f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b`
